@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+/* _________________________________________________Header__________________________________________________*/
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.main-header {
+    background-color: transparent;
+    /* color: black; */
+    padding: 10px 0;
+    border-radius: 0px 0px 40px 40px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Playwrite HU", cursive;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    /* Add space between icons */
+}
+
+.icons input {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.icon-one:hover {
+    transform: scale(1);
+    color: #b6babb;
+    transition: .3s;
+}
+.icon-two:hover {
+    transform: scale(1);
+    color: #b6babb;
+    transition: .3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #c9c6c6;
+    border-radius: 20px;
+}
+
+/* ___________________________________________________________________________________________________________ */
+/* _____________________________________________________Home CSS____________________________________________ */
+.img-home {
+    border-radius: 40px 40px 0px 0px
+    ;
+    /* position: relative;
+    bottom: 80px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.home-contant h1 {
+    font-family: "Playwrite HU", cursive;
+    color: white;
+    position: relative;
+    top: 70px;
+}
+
+.home-contant {
+    font-size: 35px;
+    color: sandybrown;
+    position: relative;
+    left: 54%;
+    bottom: 550px;
+}
+
+.button_home {
+    font-size: 16px;
+    border-radius: 18px;
+    background-color: sienna;
+    padding: 10px;
+    color: antiquewhite;
+    position: relative;
+    left: 160px;
+    bottom: 25px;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: sienna;
+}
+.dilvr1{
+    /* border: 2px solid black; */
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 300px;
+    height:350px;
+    border-radius: 50px;
+}
+.dilvr1 p{
+    color: rgb(110, 107, 107);
+}
+.dilvr1 i{
+    margin-top: 50px;
+    font-size: 90px;
+    color:peru;
+}
+.dilvr{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 270px;
+}
+.headline{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 320px;
+}
+.headline h2{
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style: normal;
+    font-size: 45px;
+}
+/* ________________________________________Card Home__________________________________________________________ */
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(82, 60%, 28%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --body-color: hsl(0, 0%, 95%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h2-font-size: 1.25rem;
+    --small-font-size: .813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+    :root {
+        --h2-font-size: 1.5rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/*=============== BASE ===============*/
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+/* body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+} */
+
+/* img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+/*=============== CARD ===============*/
+.item {
+    display:grid;
+    place-items:center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+    position: relative;
+    bottom: 480px;
+    right: 20px;
+}
+
+.carditem {
+    display: grid;
+    row-gap: 3.5rem;
+    
+}
+
+.card_article {
+    position: relative;
+    overflow: hidden;
+    padding-left: 80px;
+}
+
+.card_img{
+    /* width: 328px; */
+    border-radius: 1.5rem;
+}
+.cardinline{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.card_data {
+    width: 250px;
+    background-color: var(--container-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card_description {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+}
+
+.card_title {
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+}
+
+.card_button {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+}
+
+.card_button:hover {
+    text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card_article:hover .card_data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card_article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card_article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card_article:not(:hover) .card_data {
+    animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+
+    50% {
+        overflow: hidden;
+    }
+}
+
+/* ___________________________________________________________________________________________________________ */
+/*___________________________________________________About Sections________________________________________ */
+.about_sec{
+    position: relative;
+    bottom: 300px;
+    /* border: 4px solid green; */
+}
+.aboutcontnr{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+.aboutcontnr .aboutcard{
+    
+}
+/* _____________________________________________________Footer CSS____________________________________________ */
+.main-footer {
+    background-color: transparent;
+    color: black;
+    padding: 20px 0;
+    border-radius: 45px 45px 0px 0px;
+    /* box-shadow: rgba(24, 24, 43, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(63, 57, 57);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+}
