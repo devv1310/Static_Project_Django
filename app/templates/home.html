@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+<img class="img-home" src="{% static 'image/image1.jpg' %}" height="650px" width="100%" alt="food">
+<div class="home-contant">
+    <h1>FoodMantra</h1>
+    <p>THE BEST FOOD IN BHARAT</p>
+    <button class="button_home">ORDER NOW</button>
+</div>
+
+<div class="dilvr">
+    <div class="dilvr1">
+       <center>
+        <i class="fa-solid fa-mobile"></i>
+        <h2>ORDER ON THE GO</h2>
+        <p>I'm a paragraph.Click here to add your own text and edit me. Let your users get to know you.</p>
+        </center>
+    </div>
+    <div class="dilvr1">
+    <center>
+        <i class="fa-solid fa-motorcycle"></i>
+        <h2>DOORSTEP DELIVERY</h2>
+        <p>I'm a paragraph.Click here to add your own text and edit me. Let your users get to know you.</p>
+     </center>
+    </div>
+    <div class="dilvr1">
+        <center>
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h2>CURBSIDE PICKUP</h2>
+        <p>I'm a paragraph.Click here to add your own text and edit me. Let your users get to know you.</p>
+        </center>
+    </div>
+</div>
+<!-----------------------------------------------MENU------------------------------------------------------------>
+<div class="menuitem">
+    <div class="headline">
+        <img src="{% static 'image/line.png' %}" height="380px" width="340px" alt="line">
+        <h2>MENU</h2>
+        <img src="{% static 'image/line.png' %}" height="380px" width="340px" alt="line">
+    </div>
+    <div class="item">
+        <div class="carditem">
+            <div class="cardinline">
+                <article class="card_article">
+                    <img src="{% static 'image/panner nanna.jpg' %}" height="340px" width="328px" alt="image1" class="card_img">
+
+                    <div class="card_data">
+                        <span class="card_descripation">love all types of paneer meals.</span>
+                        <h2 class="card_title">Paneer Stuffed Naan</h2>
+                        <a href="#" class="card_button">Order Now</a>
+                    </div>
+                </article>
+                <article class="card_article">
+                    <img src="{% static 'image/samosa.jpg' %}" height="340px" width="328px" alt="image2" class="card_img">
+
+                    <div class="card_data">
+                        <span class="card_descripation">A fried South Asian and West Asian snack.</span>
+                        <h2 class="card_title">Samosa</h2>
+                        <a href="#" class="card_button">Order Now</a>
+                    </div>
+                </article>
+                <article class="card_article">
+                    <img src="{% static 'image/firyrice.jpg' %}" height="340px" width="328px" alt="image3" class="card_img">
+
+                    <div class="card_data">
+                        <span class="card_descripation">The grains are separate, light, and fluffy.</span>
+                        <h2 class="card_title">Fried Rice</h2>
+                        <a href="#" class="card_button">Order Now</a>
+                    </div>
+                </article>
+            </div>
+            <div class="cardinline">
+                <article class="card_article">
+                    <img src="{% static 'image/Dalrice.jpg' %}" height="340px" width="328px" alt="image4" class="card_img">
+
+                    <div class="card_data">
+                        <span class="card_descripation">Steamed rice and a cooked lentil or other pulses stew called dal.</span>
+                        <h2 class="card_title">Dal Rice</h2>
+                        <a href="#" class="card_button">Order Now</a>
+                    </div>
+                </article>
+                <article class="card_article">
+                    <img src="{% static 'image/cholenanna.jpg' %}" height="340px" width="328px" alt="image5" class="card_img">
+
+                    <div class="card_data">
+                        <span class="card_descripation">A popular North Indian dish that consists of spicy chickpeas (chole) and a deep-fried bread</span>
+                        <h2 class="card_title">CHOLE BHATURE</h2>
+                        <a href="#" class="card_button">Order Now</a>
+                    </div>
+                </article>
+                <article class="card_article">
+                    <img src="{% static 'image/conedal.jpg' %}" height="340px" width="328px" alt="image6" class="card_img">
+
+                    <div class="card_data">
+                        <span class="card_descripation">Corn grains that are cooked in the dal</span>
+                        <h2 class="card_title">Masala corn</h2>
+                        <a href="#" class="card_button">Order Now</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------------ABOUT----------------------------------------------------->
+<div class="about_sec">    
+    <div class="headline">
+        <img src="{% static 'image/line.png' %}" height="380px" width="340px" alt="line">
+        <h2>ABOUT</h2>
+        <img src="{% static 'image/line.png' %}" height="380px" width="340px" alt="line">
+    </div>
+    <div class="aboutcontnr" style="--clr:#009688;">
+        <div class="aboutcard">
+            <div class="imgA2">
+                <img src="{% static 'image/Restro.jpg' %}" alt="Restro">
+            </div>
+            <div class="content">
+                <h2>Restaurants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nam, veritatis hic voluptatibus enim optio nostrum natus odio ipsum officiis mollitia deserunt.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="aboutcard" style="--clr:#ff3e7f;">
+            <div class="imgA2">
+                <img src="{% static 'image/Chefs.jpg' %}" alt="Restro">
+            </div>
+            <div class="content">
+                <h2>Chefs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam eius in, ducimus autem natus eum consequatur perspiciatis dolore et non quasi, consectetur optio at</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+ 
